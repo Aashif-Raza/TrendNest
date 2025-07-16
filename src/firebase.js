@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, FacebookAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC1zPdRjf8Bwrqv1jnaahKGOJYjJt-L92E",
-  authDomain: "trendnest-a5867.firebaseapp.com",
-  projectId: "trendnest-a5867",
-  storageBucket: "trendnest-a5867.firebasestorage.app",
-  messagingSenderId: "509673752324",
-  appId: "1:509673752324:web:738860cdd417e526d27251"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
